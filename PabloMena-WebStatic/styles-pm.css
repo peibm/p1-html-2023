@@ -1,0 +1,44 @@
+@import "https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap";
+
+body {
+  margin: 0;
+}
+#portrait {
+  border-radius: 30%;
+  width: 15vw;
+  margin-left: 10vw;
+}
+
+#portrait-container {
+  width: 30vw;
+}
+
+#left-header {
+  width: 30vw;
+}
+
+#name p,
+h1 {
+  font-family: Permanent Marker, Work Sans, sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 80%;
+  width: 30vw;
+  text-align: center;
+  margin: 5%;
+}
+
+#name p {
+  font-size: 1rem;
+}
+
+#header {
+  background-image: url("assets/background-softcolors.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
