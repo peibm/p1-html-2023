@@ -18,8 +18,7 @@ body {
   width: 30vw;
 }
 
-#name p,
-h1 {
+#name p, #name h1 {
   font-family: Permanent Marker, Work Sans, sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
