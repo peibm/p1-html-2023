@@ -8,7 +8,6 @@
     <title>Pablo Mena</title>
   </head>
   <body>
-    
     <section id="header">
       <div id="portrait-container">
         <img src="assets/AI-portrait.png" alt="mena" id="portrait" />
@@ -18,10 +17,9 @@
         <p>...my web resume</p>
       </div>
       <div id="left-header"></div>
-
     </section>
-    <div class="profile-section">
-      <h2>Profile</h2>
+    <div class="section" id="feature">
+      <h1>About me</h1>
       <p>
         Engineer currently looking for new challenges and open to a career
         pivoting. My background includes electronics, programming, Agile+CI/CD,
@@ -32,9 +30,10 @@
         user experience.
       </p>
     </div>
-    <div class="experience-section">
-      <h2>Experience</h2>
-      <div>
+    <div class="section">
+      <section class="section-title">EXPERIENCE</section>
+
+      <div id="current-job">
         <h3>Writing systems engineer - Large Format R&D Lab</h3>
         <h4>
           HP inc. Barcelona site, Spain
@@ -45,8 +44,9 @@
           a link to technical and non-technical areas. Owner of ink
           interactions, throughput, efficiency, color and image processing.
         </p>
-        <div class="expanding-list">
-          <ul>
+        <button class="button-colapsible">+</button>
+        <div class="colapsible">
+          <ul class="expanding-list">
             <li>
               Sotfware/Hardware/Ink integration of new printers like the
               revolutionary HP Latex R series and the HP Latex 2700
@@ -73,15 +73,16 @@
           </ul>
         </div>
       </div>
-      <div>
+      <div class="old-jobs">
         <h3>Research engineer - Underworld project</h3>
         <h4>
           Uni. Politecnica de Madrid, Spain
           <span class="dates-range">September 2015 - March 2017</span>
         </h4>
         <p>Electromagnetic communications in underwater sensor networks.</p>
-        <div class="expanding-list">
-          <ul>
+        <button class="button-colapsible">+</button>
+        <div class="colapsible">
+          <ul class="expanding-list">
             <li>
               Instrumentation testbeds design, planning and execution (PCB
               design/ARDUINO)
@@ -97,7 +98,7 @@
           </ul>
         </div>
       </div>
-      <div>
+      <div class="old-jobs">
         <h3>Software Developer - Internship</h3>
         <h4>
           Essimple, Spain
@@ -107,7 +108,7 @@
       </div>
     </div>
 
-    <div class="education-section">
+    <div class="section">
       <h2>Education</h2>
       <div>
         <h4>BACHELOR'S + MASTER'S DEGREE (Old ¨Ingeniero Superior¨)</h4>
