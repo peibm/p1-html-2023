@@ -19,15 +19,16 @@
       <div id="left-header"></div>
     </section>
     <div class="section" id="feature">
-      <h1>About me</h1>
+      <h2 id="aboutme">About me</h2>
       <p>
-        Engineer currently looking for new challenges and open to a career
-        pivoting. My background includes electronics, programming, Agile+CI/CD,
-        data analysis, system-level design. testing and technical product
-        management. I am a team player, fast learner, customer-oriented and
-        notable for my creativity and applied skills. My biggest motivations are
-        getting to solve complex problems on time and make the difference on the
-        user experience.
+        Hi, I am <strong>Pablo Mena</strong>. I am an engineer working at HP
+        inc. always looking for new challenges and opportunities. My background
+        includes programming, Agile+CI/CD, electronics, data analysis,
+        system-level design, testing and technical product management. I am a
+        team player, fast learner, customer-oriented and notable for my
+        creativity and applied skills. My biggest motivations are getting to
+        solve complex problems on time and make the difference on the user
+        experience.
       </p>
     </div>
     <div class="section">
@@ -37,15 +38,17 @@
         <h3>Writing systems engineer - Large Format R&D Lab</h3>
         <h4>
           HP inc. Barcelona site, Spain
-          <span class="dates-range">September 2017 - now</span>
+          <span class="dates-range"
+            >September 2017 - <span style="color: blue">now</span></span
+          >
         </h4>
         <p>
           FW&HW design and integration in industrial printing systems serving as
           a link to technical and non-technical areas. Owner of ink
           interactions, throughput, efficiency, color and image processing.
         </p>
-        <button class="button-colapsible">+</button>
-        <div class="colapsible">
+        <button class="button-collapsible">+</button>
+        <div class="collapsible">
           <ul class="expanding-list">
             <li>
               Sotfware/Hardware/Ink integration of new printers like the
@@ -80,8 +83,8 @@
           <span class="dates-range">September 2015 - March 2017</span>
         </h4>
         <p>Electromagnetic communications in underwater sensor networks.</p>
-        <button class="button-colapsible">+</button>
-        <div class="colapsible">
+        <button class="button-collapsible">+</button>
+        <div class="collapsible">
           <ul class="expanding-list">
             <li>
               Instrumentation testbeds design, planning and execution (PCB
@@ -109,34 +112,41 @@
     </div>
 
     <div class="section">
-      <h2>Education</h2>
-      <div>
+      <section class="section-title" id="edu-sect">EDUCATION</section>
+      <div class="uni-studies">
         <h4>BACHELOR'S + MASTER'S DEGREE (Old ¨Ingeniero Superior¨)</h4>
         <h3>Telecommunications Engineer</h3>
         <span class="dates-range"> 2006-2015 </span>
       </div>
 
-      <div>
+      <div class="uni-studies">
         <h4>POST-GRADUATE</h4>
         <h3>Full Stack Web Technologies</h3>
         <span class="dates-range"> 2023 </span>
       </div>
 
-      <div>
+      <div class="cert">
         <h4>edX-verified Certificate</h4>
         <h3>Analyzing Data with Python</h3>
         <span class="dates-range"> 2023 </span>
       </div>
 
-      <div>
+      <div class="cert">
         <h4>Cambridge Assesment Certificate</h4>
         <h3>Advanced English C1</h3>
         <span class="dates-range"> 2017 </span>
       </div>
     </div>
 
+    <div class="nav">
+      <a href=".aboutme" class="nav-btn">About Me</a>
+      <a href=".current-job" class="nav-btn">Experience</a>
+      <a href=".edu-sect" class="nav-btn">Education</a>
+      <a href=".contact" class="nav-btn">Contact</a>
+    </div>
+
     <footer>
-      <h1>Contact</h1>
+      <h1 id="contact">Contact</h1>
       <div>pablo.mena.rodriguez@gmail.com</div>
       <div>+34 622 221 357</div>
       <div>
@@ -150,4 +160,20 @@
       </div>
     </footer>
   </body>
+  
+  <script>
+    const collapsibles = document.getElementsByClassName("button-collapsible");
+
+    for (let col of collapsibles) {
+      col.addEventListener("click", () => {
+        col.classList.toggle("active");
+        const content = col.nextElementSibling;
+        if (content.style.display === "flex") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "flex";
+        }
+      });
+    }
+  </script>
 </html>
