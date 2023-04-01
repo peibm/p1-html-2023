@@ -1,17 +1,12 @@
 @import "https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap";
 
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 @font-face {
   font-family: "National 2 narrow web";
-  src: url("https://uploads-ssl.webflow.com/5ff211b17095aa7b6582b8cb/5ff211b17095aa514782badb_national-2-narrow-web-medium.woff2")
-      format("woff2"),
-    url("https://uploads-ssl.webflow.com/5ff211b17095aa7b6582b8cb/5ff211b17095aa7d3d82bada_national-2-narrow-web-medium.eot")
-      format("embedded-opentype"),
-    url("https://uploads-ssl.webflow.com/5ff211b17095aa7b6582b8cb/5ff211b17095aacfca82bae6_national-2-narrow-web-medium.woff")
-      format("woff");
+  src: url("https://uploads-ssl.webflow.com/5ff211b17095aa7b6582b8cb/5ff211b17095aa7d3d82bada_national-2-narrow-web-medium.eot")
+      format("embedded-opentype");
   font-weight: 500;
   font-style: normal;
   font-display: auto;
@@ -25,6 +20,11 @@ body {
   border-radius: 30%;
   width: 15vw;
   margin-left: 10vw;
+  -webkit-filter: grayscale(100%);
+}
+
+#portrait:hover {
+  filter: none;
 }
 
 #portrait-container {
@@ -60,7 +60,8 @@ body {
   height: 100vh;
 }
 
-.section > div, #feature {
+.section > div,
+#feature {
   -webkit-box-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -73,7 +74,7 @@ body {
   line-height: 2;
 }
 
-#aboutme{
+#aboutme {
   padding: 0.5rem 1rem;
   display: inline-block;
   background-color: rgb(254 217 111);
@@ -84,7 +85,6 @@ body {
   margin-top: 0;
   margin-bottom: 2rem;
 }
-
 
 .section-title {
   width: 100%;
@@ -99,19 +99,69 @@ body {
   margin-bottom: 30px;
 }
 
-#current-job{
-  background-color: rgb(186, 217, 229);
+#current-job {
+  background-color: rgb(180, 207, 232, 0.5);
   padding: 50px;
+  transition-duration: 0.7s;
+  border-radius: 50px;
+}
+
+#current-job:hover, .old-jobs:hover, .uni-studies:hover, .cert:hover{
   border-radius: 71px;
 }
 
-.old-jobs{
-  background-color: rgba(186, 217, 229, 0.2);;
+.old-jobs {
+  background-color: rgba(180, 207, 232, 0.2);
   padding: 50px;
-  border-radius: 71px;
+  border-radius: 50px;
+  transition-duration: 0.7s;
   margin-top: 20px;
 }
 
-.old-jobs:last-of-type{
+.old-jobs:last-of-type {
   margin-bottom: 20px;
+}
+
+.uni-studies {
+  background-color: rgb(245, 228, 229);
+  padding: 50px;
+  transition-duration: 0.7s;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cert {
+  background-color: rgb(245, 228, 229, 0.35);
+  padding: 50px;
+  transition-duration: 0.7s;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button-collapsible{
+  background-color: rgb(180, 207, 232, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .button-collapsible:hover {
+  background-color: rgb(180, 207, 232, 1);
+}
+
+.collapsible{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+#nav-btn{
+  position: fixed;
+  display: flex;
 }
