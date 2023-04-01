@@ -16,6 +16,13 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
+
+
+p{
+  text-align: justify; 
+  text-justify:newspaper;
+}
+
 #portrait {
   border-radius: 30%;
   width: 15vw;
@@ -60,6 +67,7 @@ body {
   height: 100vh;
 }
 
+
 .section > div,
 #feature {
   -webkit-box-align: center;
@@ -97,6 +105,7 @@ body {
   font-size: 10vw;
   text-align: center;
   margin-bottom: 30px;
+  padding-right: 70px;
 }
 
 #current-job {
@@ -161,7 +170,29 @@ body {
   background-color: rgba(0, 0, 0, 0.02);
 }
 
-#nav-btn{
+footer{
+  background-image: url("assets/background-softcolors.webp") ;
+  background-size:auto;
+  height: 70vh;
+}
+
+#contact{
+  text-align: left;
+}
+
+.nav{
   position: fixed;
+  top: 30vh;
+  right: 5vw;
   display: flex;
+  flex-direction: column;
+  background-color: rgba(229, 239, 239, 0.482);
+}
+
+.nav-btn{
+  margin: 10px;
+}
+
+.nav-btn > img {
+  width: 50px;
 }
